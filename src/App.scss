@@ -1,0 +1,23 @@
+@use "./assets/scss/media-queries.scss" as *;
+
+:root {
+  --main: #f58244;
+}
+
+.error-msg {
+  color: #d51a52;
+  font-family: Futura;
+  border: none !important;
+
+  @include lt-xxl {
+    font-size: 14px !important;
+  }
+
+  @include lt-llg {
+    font-size: 13px !important;
+  }
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}

@@ -1,0 +1,15 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.content {
+  padding: 70px 150px 70px 150px;
+
+  @include lt-xxl {
+    margin-top: 70px;
+    padding: 70px 100px 70px 100px;
+  }
+}
+
+.form,
+.messages {
+  width: 100%;
+}

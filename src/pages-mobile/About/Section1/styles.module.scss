@@ -1,0 +1,55 @@
+.main {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.infos {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  h1 {
+    color: #000;
+    text-align: center;
+    font-family: Futura;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 28.6px */
+    
+    padding: 10px 0 ;
+  }
+
+  p {
+    color: #000;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  width: 90%;
+  line-height: 120%;
+  padding: 5px 15px 15px 15px;
+  margin: 0 auto;
+  /* 25.2px */
+  }
+
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}

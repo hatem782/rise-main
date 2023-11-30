@@ -1,0 +1,83 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.logo {
+  display: block;
+  margin: auto;
+  width: 120px;
+  margin-bottom: 40px;
+
+  @include lt-xxl {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+.thank-main {
+  width: 600px;
+  background-color: white;
+  padding: 20px 40px 60px 40px;
+  position: relative;
+
+  @include lt-xxl {
+    padding: 15px 26px 60px 26px;
+    width: 500px;
+  }
+
+  .icon {
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+
+  img {
+    width: 140px;
+    margin: 0px 0px 40px 0px;
+
+    @include lt-xxl {
+      width: 110px;
+      margin: 0px 0px 45px 0px;
+    }
+  }
+
+  .centered {
+    margin: 0px auto 40px auto;
+  }
+
+  .title {
+    color: var(--main);
+    text-align: center;
+    font-size: 45px;
+    font-family: "Nunito";
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+    @include lt-xxl {
+      font-size: 40px;
+      font-weight: 800;
+    }
+  }
+
+  p {
+    margin-top: 30px;
+    color: #40455b;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Nunito";
+    line-height: 26px;
+
+    @include lt-xxl {
+      font-size: 18px;
+    }
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .justify {
+    text-align: left;
+  }
+}

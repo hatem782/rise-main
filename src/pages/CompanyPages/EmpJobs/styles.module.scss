@@ -1,0 +1,240 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+
+  @include lt-xxl {
+    margin-top: 85px;
+  }
+}
+
+.content {
+  padding: 10px 0px 100px 0px;
+
+  @include lt-xxl {
+    padding: 7px 0px 70px 0px;
+  }
+}
+
+.header {
+  position: relative;
+  .cover {
+    width: 100%;
+    aspect-ratio: 1120/180;
+    box-shadow: 0px 4px 6px 0px rgba(65, 161, 160, 0.04);
+    border-radius: 21px 21px 0px 21px;
+    object-fit: cover;
+    object-position: 50% 0%;
+
+    @include lt-xxl {
+      border-radius: 15px 15px 0px 15px;
+    }
+  }
+
+  .select-img {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 500px;
+    background: rgba(65, 161, 160, 0.54);
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include lt-xxl {
+      height: 50px;
+      width: 50px;
+
+      top: 30px;
+      right: 30px;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .white-container {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+
+    border-radius: 0px 21px;
+    background: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(65, 161, 159, 0.3);
+
+    padding: 0px 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include lt-xxl {
+      bottom: -40px;
+      padding: 0px 140px;
+      border-radius: 0px 15px;
+    }
+
+    @include lt-llg {
+      bottom: -30px;
+      padding: 0px 120px;
+      border-radius: 0px 12px;
+      height: 70px;
+    }
+
+    @include lt-lg {
+      padding: 0px 60px;
+    }
+
+    .company-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .logo-container {
+      width: 250px;
+      height: 230px;
+      aspect-ratio: 1/1;
+      background-color: white;
+
+      border-radius: 0px 21px;
+      border: 1px solid rgba(0, 0, 0, 0);
+      background: #fff;
+      box-shadow: 0px 4px 10px 0px rgba(65, 161, 160, 0.13),
+        0px 4px 15px 0px rgba(65, 161, 160, 0.13);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: 40px 20px 0px 0px;
+
+      @include lt-xxl {
+        width: 200px;
+        height: 200px;
+        margin: 30px 20px 0px 0px;
+      }
+
+      img {
+        width: 75%;
+      }
+    }
+
+    p {
+      color: #000;
+      font-size: 24px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      @include lt-xxl {
+        font-size: 22px;
+      }
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 400;
+      color: black;
+
+      border-width: 1px;
+      background-color: white;
+
+      @include lt-xxl {
+        padding: 9px 18px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.body {
+  width: 100%;
+  padding: 80px 200px 0px 200px;
+
+  @include lt-xxl {
+    padding: 80px 140px 0px 140px;
+  }
+
+  @include lt-lg {
+    padding: 110px 60px 0px 60px;
+  }
+
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 20px;
+      font-weight: 500;
+
+      padding: 15px 60px;
+
+      @include lt-xxl {
+        font-size: 20px;
+        padding: 12px 50px;
+      }
+
+      img {
+        height: 20px;
+        margin: 0px 10px 0px 0px;
+        @include lt-xxl {
+          height: 18px;
+        }
+      }
+    }
+  }
+
+  .jobs {
+    width: 100%;
+
+    margin: 50px 0px 0px 0px;
+
+    @include lt-xxl {
+      margin: 40px 0px 0px 0px;
+    }
+
+    .title {
+      font-size: 28px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+
+      @include lt-xxl {
+        font-size: 26px;
+      }
+
+      span {
+        color: #f58244;
+      }
+    }
+
+    .jobs-items {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .item {
+        width: 49%;
+        margin: 20px 0px;
+      }
+    }
+  }
+}

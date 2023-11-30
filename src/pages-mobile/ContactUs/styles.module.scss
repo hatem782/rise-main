@@ -1,0 +1,110 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+
+}
+.c1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 54px;
+}
+
+.c2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 54px;
+}
+.content {
+  margin: 100px 0px 20px 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-part{
+  width: 80%;
+  .head {
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    h1 {
+      color: #000;
+      font-family: Futura;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%; 
+    }
+  
+    img {
+      height: 150px;
+    }
+  }
+  
+  .desc {
+    color: #000;
+    text-align: center;
+    font-family: Futura PT;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  
+    a {
+      margin: 10px 0px;
+      display: block;
+      color: var(--main);
+    }
+  }
+  
+  .form {
+    width: 100% !important;
+    margin: 20px auto;
+    
+    .input {
+      font-size: 14px;
+      ::placeholder{
+        color: rgba(0, 0, 0, 0.20);
+        font-family: Futura PT;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+      }
+      label {
+        margin-bottom: 20px;
+        display: block;
+        font-size: 14px;
+      }
+
+      div {
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      input {
+        padding: 10px 8px;
+        font-size: 14px;
+        ::placeholder{
+          color: rgba(0, 0, 0, 0.20);
+          font-family: Futura PT;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 15px;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
+  
+

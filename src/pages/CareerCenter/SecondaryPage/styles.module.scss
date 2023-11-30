@@ -1,0 +1,236 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.content {
+  width: 100%;
+  position: relative;
+  padding: 0px 0px 50px 0px;
+  margin-top: 100px;
+
+  @include lt-xxl {
+    margin-top: 85px;
+  }
+}
+
+.Menu-and-rech {
+  width: 100%;
+  padding: 60px 11% 50px 11%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .Menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .item {
+      font-family: Nunito;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+
+      margin: 0px 20px 0px 0px;
+      padding: 0px 0px 10px 0px;
+      border-bottom: solid 3px transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        border-bottom: solid 3px var(--main);
+      }
+    }
+
+    .active {
+      color: var(--main);
+      border-bottom: solid 3px var(--main);
+    }
+  }
+
+  .Rech {
+    background-color: var(--main);
+    padding: 12px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    border-radius: 0px 20px;
+    transform: translateY(-5px);
+
+    img {
+      height: 20px;
+      cursor: pointer;
+    }
+
+    input {
+      font-size: 18px;
+      width: 0px;
+      color: white;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      input {
+        width: 180px;
+      }
+
+      img {
+        margin: 0px 10px 0px 0px;
+      }
+    }
+  }
+}
+
+.One-Item {
+  width: 100%;
+  padding: 0px 11% 50px 11%;
+
+  .one-item-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    img {
+      width: 46%;
+      display: block;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .infos {
+      width: 52%;
+
+      h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        padding: 0px 0px 20px 0px;
+        margin: 0px 0px 15px 0px;
+        width: 100%;
+        border-bottom: solid 2px black;
+      }
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+  .title {
+    color: #000;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .desc {
+    color: rgba(0, 0, 0, 0.45);
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .date {
+    color: var(--main);
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .more {
+    margin: 20px 0px 0px 0px;
+    .title {
+      color: #000;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0px 0px 8px 0px;
+    }
+
+    .desc {
+      color: #000;
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0px 0px 10px 0px;
+    }
+
+    .date {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+      margin: 0px 0px 30px 0px;
+    }
+  }
+}
+
+.job-search-tools {
+  width: 100%;
+  padding: 60px 11% 0px 11%;
+
+  h1 {
+    color: #000;
+    font-family: Futura;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+    margin: 0px 0px 30px 0px;
+  }
+
+  .jobs-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .item {
+      width: 30%;
+    }
+  }
+}
+
+.jobs {
+  width: 100%;
+  padding: 60px 11% 0px 11%;
+
+  h1 {
+    color: #000;
+    font-family: Futura;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+    margin: 0px 0px 30px 0px;
+  }
+
+  .jobs-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .item {
+      width: 49%;
+    }
+  }
+}

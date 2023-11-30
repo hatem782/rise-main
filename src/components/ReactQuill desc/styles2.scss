@@ -1,0 +1,26 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.ql-toolbar {
+  /* padding: 12px;
+  transform: scale(1.5) translateX(190px); */
+  padding: 10px;
+}
+
+.ql-snow.ql-toolbar button,
+.ql-snow .ql-toolbar button {
+  height: 30px !important;
+  padding: 3px 5px !important;
+  width: 33px !important;
+}
+
+.ql-container {
+  font-size: 20px !important;
+
+  @include lt-xxl {
+    font-size: 20px !important;
+  }
+
+  @include lt-llg {
+    font-size: 16px !important;
+  }
+}

@@ -1,0 +1,126 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 100px;
+
+  @include lt-xxl {
+    margin-top: 85px;
+  }
+
+  @include lt-llg {
+    margin-top: 70px;
+  }
+}
+
+.Left {
+  width: 51%;
+  position: relative;
+
+  .c0 {
+    position: absolute;
+    right: 80px;
+    top: 130px;
+
+    @include lt-xxl {
+      height: 60px;
+    }
+
+    @include lt-llg {
+      top: 80px;
+    }
+  }
+
+  .c1 {
+    position: absolute;
+    left: -20px;
+    bottom: 100px;
+    height: 320px;
+
+    @include lt-xxl {
+      height: 230px;
+      left: 0px;
+      bottom: 50px;
+    }
+
+    @include lt-llg {
+      height: 200px;
+      left: 0px;
+      bottom: 40px;
+    }
+  }
+
+  .container {
+    padding: 210px 50px 0px 180px;
+
+    @include lt-xxl {
+      padding: 180px 50px 0px 150px;
+    }
+
+    @include lt-llg {
+      padding: 150px 30px 0px 120px;
+    }
+
+    h1 {
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 90px;
+      line-height: 100%;
+      color: #000000;
+
+      @include lt-xxl {
+        font-size: 60px;
+      }
+
+      @include lt-llg {
+        font-size: 50px;
+      }
+    }
+
+    p {
+      margin: 60px 0px 0px 0px;
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 120%;
+      text-align: left;
+      color: #000000;
+
+      @include lt-xxl {
+        font-size: 20px;
+        margin: 40px 0px 0px 0px;
+      }
+
+      @include lt-llg {
+        margin: 20px 0px 0px 0px;
+        font-size: 16px;
+      }
+    }
+
+    .btn {
+      margin: 60px 0px 0px 0px;
+
+      @include lt-xxl {
+        margin: 40px 0px 0px 0px;
+      }
+
+      @include lt-llg {
+        margin: 20px 0px 0px 0px;
+      }
+    }
+  }
+}
+
+.Right {
+  width: 50%;
+  height: fit-content;
+
+  img {
+    width: 100%;
+  }
+}

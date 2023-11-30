@@ -1,0 +1,120 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+  padding: 20px 160px;
+  margin-top: 100px;
+
+  @include lt-xxl {
+    padding: 50px 130px;
+    margin-top: 70px;
+  }
+
+  @include lt-llg {
+    padding: 40px 110px;
+    margin-top: 60px;
+  }
+}
+
+.h2 {
+  font-size: 30px !important;
+
+  @include lt-llg {
+    font-size: 26px !important;
+  }
+}
+
+.p {
+  color: #000;
+  font-size: 22px !important;
+  font-family: Nunito;
+  line-height: 120%;
+  font-weight: 800 !important;
+
+  @include lt-xxl {
+    font-size: 16px;
+  }
+
+  @include lt-llg {
+    font-size: 20px !important;
+  }
+}
+
+.form {
+  margin: 30px 0px 40px 0px !important;
+  width: 75%;
+
+  @include lt-llg {
+    margin: 20px 0px 40px 0px !important;
+  }
+}
+
+.cover_type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quill {
+  height: 600px;
+}
+
+.choose {
+  margin-top: 0px;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .checkbox {
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+.btn-container {
+  margin-top: 30px;
+
+  .btn {
+    color: #000 !important;
+    padding: 15px 20px !important;
+  }
+}
+
+.message1 {
+  margin-top: 0px !important;
+  color: #f58244 !important ;
+  text-align: center !important;
+  font-size: 34px !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+
+  @include lt-xxl {
+    font-size: 30px !important;
+  }
+
+  @include lt-llg {
+    font-size: 28px !important;
+  }
+}
+
+.message2 {
+  margin-top: 0px !important;
+  color: #f58244 !important ;
+  text-align: center !important;
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+
+  @include lt-xxl {
+    font-size: 30px !important;
+  }
+
+  @include lt-llg {
+    font-size: 28px !important;
+  }
+}

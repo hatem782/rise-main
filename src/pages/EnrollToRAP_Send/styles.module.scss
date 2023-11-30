@@ -1,0 +1,94 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+}
+
+.content {
+  margin: 100px 0px 0px 0px;
+  position: relative;
+  @include lt-xxl {
+    margin: 85px 0px 0px 0px;
+  }
+}
+
+.c3 {
+  height: 500px;
+  position: absolute;
+  right: 0px;
+  top: 100px;
+
+  @include lt-xxl {
+    height: 300px;
+  }
+}
+
+.info-container {
+  width: 70%;
+  padding: 60px 0px 100px 160px;
+
+  @include lt-xxl {
+    padding: 50px 0px 70px 130px;
+  }
+
+  h1 {
+    color: #000;
+    font-family: Futura;
+    font-size: 78px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 66px */
+
+    margin-bottom: 80px;
+
+    @include lt-xxl {
+      font-size: 68px;
+      margin-bottom: 50px;
+    }
+    @include lt-llg {
+      font-size: 66px;
+    }
+  }
+
+  p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 10px 0px;
+
+    @include lt-xxl {
+      font-size: 21px;
+    }
+    @include lt-llg {
+      font-size: 20px;
+    }
+  }
+  .input{
+    height: 400px;
+  }
+  .textarea {
+    background-color: #d9e1e9;
+    border-radius: 10px;
+  }
+.height-area{
+  height: 400px;
+}
+  .btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 0px;
+
+    div {
+      font-size: 18px;
+      padding: 15px 80px;
+      @include lt-llg {
+        font-size: 16px;
+      }
+    }
+  }
+}

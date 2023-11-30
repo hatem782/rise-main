@@ -1,0 +1,98 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infos {
+  height: 100%;
+  width: 46%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 0px 5% 0px 0px;
+
+  h1 {
+    color: #000;
+    font-family: Futura;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1; /* 66px */
+
+    margin-bottom: 20px;
+
+    @include lt-xxl {
+      font-size: 63px;
+      margin-bottom: 20px;
+    }
+
+    @include lt-llg {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+  }
+
+  p {
+    color: #000;
+    font-family: Futura;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 25.2px */
+
+    @include lt-xxl {
+      font-size: 22px;
+    }
+
+    @include lt-llg {
+      font-size: 18px;
+    }
+  }
+
+  .c1 {
+    height: 100px;
+    position: absolute;
+    top: -25%;
+    right: -50px;
+
+    @include lt-xxl {
+      height: 70px;
+      top: -30%;
+      right: -35px;
+    }
+  }
+
+  .c2 {
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    left: 0px;
+
+    @include lt-xxl {
+      top: 0%;
+      height: 250px;
+    }
+
+    @include lt-llg {
+      top: 0%;
+      height: 220px;
+    }
+  }
+}
+
+.img {
+  height: 100%;
+  width: 54%;
+  img {
+    width: 100%;
+  }
+}

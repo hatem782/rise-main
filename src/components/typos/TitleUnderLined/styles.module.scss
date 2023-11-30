@@ -1,0 +1,20 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #000000;
+  width: fit-content;
+  padding: 0px 100px 8px 0px;
+
+  border-bottom: 3px solid var(--main);
+
+  @include lt-xxl {
+    font-size: 16px;
+    padding: 0px 120px 10px 0px;
+  }
+}

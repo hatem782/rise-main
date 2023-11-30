@@ -1,0 +1,38 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  display: flex;
+  align-items: center;
+
+  padding: 8px 5px 8px 12px;
+  background-color: var(--sky-lighter, #f2f4f5);
+  width: fit-content;
+  border-radius: 8px;
+
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+
+    @include lt-xxl {
+      font-size: 16px;
+    }
+  }
+
+  img {
+    height: 20px;
+    display: block;
+    margin: 0px 5px 0px 0px;
+    cursor: pointer;
+
+    @include lt-xxl {
+      height: 18px;
+    }
+  }
+}

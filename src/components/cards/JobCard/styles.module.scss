@@ -1,0 +1,165 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: solid 1px rgba(245, 130, 68, 0.16);
+  cursor: pointer;
+  position: relative;
+  @include lt-xxl {
+    padding: 15px;
+  }
+
+  @include lt-llg {
+    padding: 14px;
+  }
+}
+
+.selected {
+  &::before {
+    content: "";
+    background-color: var(--main);
+    height: 80%;
+    width: 2%;
+    position: absolute;
+    bottom: 10%;
+    left: 0px;
+    border-radius: 500px;
+
+    @include lt-xxl {
+      width: 2%;
+    }
+  }
+}
+
+.name-icon {
+  height: 70px;
+  width: 70px;
+  background-color: black;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  font-size: 40px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 400;
+
+  @include lt-xxl {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    font-size: 35px;
+  }
+
+  @include lt-llg {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 30px;
+  }
+}
+
+.image-icon {
+  height: 70px;
+  width: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include lt-xxl {
+    height: 60px;
+    width: 60px;
+  }
+
+  @include lt-llg {
+    height: 60px;
+    width: 60px;
+  }
+
+  img {
+    width: 90%;
+  }
+}
+
+.infos {
+  flex-grow: 1;
+  margin: 0px 0px 0px 10px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.title-job {
+  color: #000;
+  font-size: 20px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 500;
+
+  @include lt-xxl {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  @include lt-llg {
+    font-size: 16px;
+  }
+}
+
+.comp-name {
+  color: var(--main);
+  font-size: 15px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 400;
+
+  @include lt-xxl {
+    font-size: 13px;
+  }
+
+  @include lt-llg {
+    font-size: 14px;
+  }
+}
+
+.places {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    display: block;
+    margin: 0px 5px 0px 0px;
+
+    @include lt-xxl {
+      margin: 0px 2px 0px 0px;
+    }
+  }
+
+  span {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @include lt-xxl {
+      font-size: 13px;
+    }
+
+    @include lt-llg {
+      font-size: 12px;
+    }
+  }
+}

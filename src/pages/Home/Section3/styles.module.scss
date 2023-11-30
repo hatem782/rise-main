@@ -1,0 +1,95 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Left {
+  width: 51%;
+  height: 100%;
+  position: relative;
+
+  .c3 {
+    position: absolute;
+    left: -30px;
+    height: 300px;
+    bottom: -120%;
+
+    @include lt-xxl {
+      height: 220px;
+    }
+
+    @include lt-llg {
+      height: 170px;
+    }
+  }
+
+  .container {
+    padding: 0px 50px 0px 20%;
+
+    @include lt-xxl {
+      padding: 0px 40px 0px 20%;
+    }
+
+    @include lt-llg {
+      padding: 0px 40px 0px 20%;
+    }
+
+    h1 {
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 45px;
+      line-height: 110%;
+      color: #000000;
+
+      @include lt-xxl {
+        font-size: 35px;
+      }
+
+      @include lt-llg {
+        font-size: 29px;
+      }
+    }
+
+    p {
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 130%;
+      color: #000000;
+      text-align: left;
+      width: 90%;
+
+      margin-top: 30px;
+
+      @include lt-xxl {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+
+      @include lt-llg {
+        margin-top: 15px;
+        font-size: 16px;
+      }
+    }
+
+    .btn {
+      margin: 30px 0px 0px 0px;
+    }
+  }
+}
+
+.Right {
+  width: 50%;
+  height: fit-content;
+
+  img {
+    width: 100%;
+    transform: translateY(4px);
+  }
+}

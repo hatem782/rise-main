@@ -1,0 +1,352 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.content {
+  width: 100%;
+  position: relative;
+  padding: 100px 6% 100px 12%;
+  margin-top: 100px;
+
+  @include lt-xxl {
+    padding: 50px 130px;
+  }
+
+  @include lt-llg {
+    padding: 30px 120px;
+    margin-top: 90px;
+  }
+
+  .h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+
+    @include lt-xxl {
+      font-size: 45px;
+      margin-bottom: 0px;
+    }
+
+    @include lt-llg {
+      font-size: 33px;
+    }
+  }
+
+  .h2 {
+    font-size: 40px;
+    margin: 40px 0px 0px 0px;
+
+    @include lt-xxl {
+      font-size: 28px;
+      margin: 10px 0px 0px 0px;
+    }
+  }
+
+  .p {
+    color: #000;
+    font-size: 20px;
+    font-family: Nunito;
+    line-height: 120%;
+    font-weight: 600;
+
+    @include lt-xxl {
+      font-size: 16px;
+    }
+  }
+}
+
+.c1 {
+  position: absolute;
+  right: 0px;
+  top: 32%;
+  height: 400px;
+
+  @include lt-xxl {
+    top: 30%;
+    height: 280px;
+  }
+
+  @include lt-llg {
+    top: 30%;
+    height: 260px;
+  }
+}
+
+// ####################################################  Form-part ####################################################
+
+.form {
+  width: 80%;
+  margin: 60px 0px 40px 0px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include lt-xxl {
+    margin: 50px 0px 30px 0px;
+  }
+
+  @include lt-llg {
+    margin: 30px 0px 30px 0px;
+  }
+
+  .w25 {
+    width: 24.8%;
+    padding: 0px 0px 40px 0px;
+
+    @include lt-xxl {
+      padding: 0px 0px 30px 0px;
+    }
+  }
+
+  .w03 {
+    width: 32.25%;
+    padding: 0px 0px 40px 0px;
+
+    @include lt-xxl {
+      padding: 0px 0px 30px 0px;
+    }
+  }
+
+  .w05 {
+    width: 49.5%;
+    padding: 0px 0px 40px 0px;
+
+    @include lt-xxl {
+      padding: 0px 0px 30px 0px;
+    }
+  }
+
+  .w1 {
+    width: 100%;
+    padding: 0px 0px 40px 0px;
+
+    @include lt-xxl {
+      padding: 0px 0px 30px 0px;
+    }
+  }
+
+  .title {
+    width: 100%;
+    font-family: "Futura";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 15px;
+    color: #000000;
+
+    margin: 0px 0px 10px 0px;
+
+    @include lt-xxl {
+      font-size: 17px;
+      margin: 0px 0px 8px 0px;
+    }
+  }
+}
+
+.btn-container {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .btn {
+    padding: 20px 40px;
+
+    @include lt-xxl {
+      padding: 15px 30px !important;
+    }
+  }
+
+  .btn-black {
+    background-color: black;
+    border: solid 1px #1b1c1e;
+  }
+}
+
+// ####################################################  Descetiptive-part ####################################################
+
+.Descetiptive-part {
+  .h1 {
+    margin-bottom: 50px;
+  }
+
+  .btn-container {
+    margin-top: 200px;
+    width: 70%;
+
+    @include lt-xxl {
+      margin-top: 180px;
+    }
+  }
+
+  .p {
+    font-size: 18px;
+
+    @include lt-xxl {
+      font-size: 18px;
+    }
+  }
+
+  .c1 {
+    position: absolute;
+    right: 0px;
+    top: 25%;
+    height: 350px;
+
+    @include lt-xxl {
+      top: 22%;
+      height: 300px;
+    }
+  }
+}
+.terms {
+  width: 100%;
+  padding: 20px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @include lt-xxl {
+    padding: 30px 0px 0px 0px;
+  }
+
+  @include lt-llg {
+    padding: 20px 0px 0px 0px;
+  }
+
+  input {
+    width: 23px;
+    height: 23px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+
+    @include lt-xxl {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  input[type="checkbox"]:checked {
+    accent-color: var(--main);
+    background-color: #D9D9D9!important;
+
+  }
+
+  span {
+    font-family: "Futura";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+
+    color: #000000;
+  }
+
+  .orange {
+    color: var(--main);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+// #################################################### Large Input ####################################################
+
+.btn-add {
+  margin: 40px 0px;
+  width: 100%;
+
+  background: rgba(217, 217, 217, 0.5);
+  padding: 15px 0px;
+  border: 1px dashed var(--main);
+  border-radius: 2px;
+
+  @include lt-xxl {
+    margin: 30px 0px;
+    padding: 12px 0px;
+  }
+
+  span {
+    font-size: 18px;
+    // xxl cv
+  }
+
+  img {
+    height: 20px;
+    width: 20px;
+    // xxl cv
+  }
+}
+
+.at-end {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+// #################################################### main-skills ####################################################
+
+.main-skills {
+  .form {
+    justify-content: start;
+  }
+}
+
+.ca_start_skills {
+  margin-bottom: -20px !important;
+}
+
+// #################################################### main-skills ####################################################
+
+.quill {
+  padding: 100px 6% 100px 6%;
+
+  @include lt-llg {
+    padding: 40px 6% 100px 6%;
+  }
+
+  @include lt-lg {
+    padding: 20px 6% 100px 6%;
+  }
+}
+
+.form_quill {
+  width: 60%;
+
+  @include lt-llg {
+    margin: 30px 0px 30px 0px;
+  }
+}
+
+.quill_editor {
+  height: 700px !important;
+  min-height: 700px !important;
+
+  @include lt-xxl {
+    height: 600px !important;
+    min-height: 600px !important;
+  }
+
+  @include lt-llg {
+    height: 500px !important;
+    min-height: 500px !important;
+  }
+}
+
+.quill h3 {
+  width: 100%;
+  text-align: left;
+  margin: 0px 0px 30px 0px;
+
+  color: #000411;
+  font-family: Futura;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.36px;
+
+  @include lt-llg {
+    font-size: 22px;
+    margin: 0px 0px 10px 0px;
+  }
+}

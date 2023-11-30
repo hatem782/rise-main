@@ -1,0 +1,156 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+}
+
+.content {
+  margin: 100px 0px 0px 0px;
+  position: relative;
+
+  @include lt-xxl {
+    margin: 85px 0px 0px 0px;
+  }
+
+  @include lt-llg {
+    margin: 70px 0px 0px 0px;
+  }
+}
+
+.c1 {
+  width: 80px;
+  position: absolute;
+  left: 30px;
+  top: 50px;
+
+  @include lt-xxl {
+    left: 25px;
+    top: 50px;
+  }
+
+  @include lt-llg {
+    left: 20px;
+    top: 50px;
+  }
+}
+
+.c2 {
+  height: 600px;
+  position: absolute;
+  right: 0px;
+  top: 15%;
+
+  @include lt-xxl {
+    height: 500px;
+  }
+
+  @include lt-llg {
+    height: 400px;
+    top: 20%;
+  }
+}
+
+.info-part {
+  width: 60%;
+  padding: 80px 0px 150px 160px;
+
+  @include lt-xxl {
+    padding: 80px 0px 70px 130px;
+  }
+
+  @include lt-llg {
+    padding: 70px 0px 60px 120px;
+  }
+
+  h2 {
+    color: #000;
+    font-family: Futura;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+
+    margin: 0px 0px 20px 0px;
+
+    @include lt-xxl {
+      font-size: 32px;
+    }
+
+    @include lt-llg {
+      margin: 0px 0px 15px 0px;
+      font-size: 26px;
+    }
+  }
+
+  h3 {
+    color: #000;
+    font-family: Futura;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 16.8px */
+
+    @include lt-xxl {
+      font-size: 17px;
+    }
+
+    @include lt-llg {
+      font-size: 16px;
+    }
+  }
+
+  p {
+    color: #000;
+    font-family: Nunito;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+    margin: 0px 0px 20px 0px;
+
+    @include lt-xxl {
+      font-size: 15px;
+    }
+
+    @include lt-llg {
+      font-size: 14px;
+    }
+  }
+
+  .form {
+    width: 100% !important;
+    margin: 20px auto;
+
+    .input {
+      label {
+        margin-bottom: 20px;
+        display: block;
+
+        @include lt-llg {
+          margin-bottom: 10px;
+        }
+      }
+
+      div {
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      input {
+        padding: 25px 30px;
+
+        @include lt-xxl {
+          padding: 18px 20px;
+        }
+
+        @include lt-llg {
+          padding: 16px 16px;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

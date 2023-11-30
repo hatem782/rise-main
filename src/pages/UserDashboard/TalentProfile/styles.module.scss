@@ -1,0 +1,29 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  width: 70%;
+  padding: 0px 0px 100px 100px;
+  margin: 0px 0px 0px 250px;
+
+  @include lt-xxl {
+    margin: 0px 0px 0px 200px;
+    width: 75%;
+  }
+}
+
+.c1 {
+  position: absolute;
+  right: 0px;
+  top: 32%;
+  height: 300px;
+
+  @include lt-xxl {
+    top: 30%;
+    height: 220px;
+  }
+}

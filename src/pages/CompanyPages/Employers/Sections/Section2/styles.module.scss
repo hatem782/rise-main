@@ -1,0 +1,121 @@
+@use "../../../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  padding: 0px 0px 0px 0px;
+}
+
+.c {
+  position: absolute;
+  right: 30%;
+  bottom: 2%;
+  height: 80px;
+
+  @include lt-xxl {
+    //height: 220px;
+  }
+}
+
+.c1 {
+  position: absolute;
+  right: 0px;
+  top: -65px;
+
+  height: 130px;
+
+  @include lt-xxl {
+    top: -50px;
+    height: 100px;
+  }
+}
+
+.c2 {
+  position: absolute;
+  right: 0px;
+  bottom: 5%;
+
+  height: 200px;
+
+  @include lt-xxl {
+    height: 170px;
+  }
+}
+
+.Left {
+  width: 53%;
+  height: 100%;
+  padding: 20px 20px 60px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include lt-xxl {
+    padding: 10px 30px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.Right {
+  width: 47%;
+  height: 100%;
+  position: relative;
+
+  .container {
+    padding: 0px 50px 0px 30px;
+
+    @include lt-xxl {
+      padding: 0% 110px 0px 30px;
+    }
+    @include lt-llg {
+      padding: 0% 90px 0px 30px;
+    }
+
+    h1 {
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 44px;
+      line-height: 110%;
+      color: #000000;
+
+      @include lt-xxl {
+        font-size: 34px;
+      }
+
+      @include lt-llg {
+        font-size: 29px;
+      }
+    }
+
+    p {
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 140%;
+      color: #000000;
+      text-align: left;
+
+      margin-top: 30px;
+
+      @include lt-xxl {
+        margin-top: 20px;
+        font-size: 19px;
+      }
+
+      @include lt-llg {
+        margin-top: 15px;
+        font-size: 16px;
+      }
+    }
+  }
+}

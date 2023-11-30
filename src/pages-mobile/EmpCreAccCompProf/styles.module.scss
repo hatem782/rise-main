@@ -1,0 +1,105 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.main {
+  margin-top: 100px;
+
+
+  .c1 {
+    position: absolute;
+    left: 0px;
+    top: 100%;
+
+    @include lt-xxl {
+      width: 80px;
+    }
+  }
+
+  .c2 {
+    position: absolute;
+    right: 0px;
+    top: 85%;
+
+    @include lt-xxl {
+      width: 80px;
+    }
+  }
+}
+
+.main-content {
+
+  .h1 {
+    font-size: 20px;
+  }
+
+
+}
+
+.form {
+  width: 100% !important;
+}
+
+.terms {
+  width: 100%;
+  padding: 20px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+
+
+  input {
+    width: 23px;
+    height: 23px;
+
+    border: 2px solid #000000;
+    border-radius: 4px;
+
+    @include lt-xxl {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  input[type="checkbox"]:checked {
+    accent-color: var(--main);
+  }
+
+  span {
+    font-family: "Futura";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+
+    color: #000000;
+  }
+
+  .orange {
+    color: var(--main);
+    text-decoration: underline;
+  }
+}
+
+.next {
+  margin: 30px 0px;
+  padding: 25px 50px;
+  font-size: 25px !important;
+  width: 100% !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include lt-xxl {
+    font-size: 20px !important;
+  }
+
+  img {
+    margin: 0px 5px;
+    display: block;
+    height: 15px;
+
+    @include lt-xxl {
+      height: 12px;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+  position: fixed;
+  margin-bottom: 100px;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 160px;
+  background-color: white;
+
+  box-shadow: 0px 4px 13px rgba(245, 130, 68, 0.13);
+
+  @include lt-xxl {
+    padding: 10px 110px;
+  }
+}
+
+.logo {
+  height: 76px;
+
+  @include lt-xxl {
+    height: 65px;
+  }
+}
+
+.steps {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin: 0px 8px;
+
+    .number {
+      color: #000;
+      text-align: center;
+      font-size: 17px;
+      font-family: Nunito;
+
+      display: block;
+      border: solid 1px black;
+      width: 22px;
+      height: 22px;
+      border-radius: 500px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 4px 0px 0px;
+
+      @include lt-xxl {
+        font-size: 16px;
+        margin: 0px 4px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .name {
+      color: #000;
+      text-align: center;
+      font-size: 18px;
+      font-family: Nunito;
+      margin: 0px 10px 0px 8px;
+
+      @include lt-xxl {
+        font-size: 16px;
+        margin: 0px 4px;
+      }
+    }
+
+    .divider {
+      width: 25px;
+      height: 1px;
+      background-color: #000000;
+      margin: 0px 8px;
+
+      @include lt-xxl {
+        width: 20px;
+      }
+    }
+  }
+}
+
+.current {
+  .number {
+    color: var(--main) !important;
+    border: solid 1px var(--main) !important;
+  }
+
+  .name {
+    color: var(--main) !important;
+  }
+}
+
+.done {
+  .number {
+    color: white !important;
+    border: solid 1px var(--main) !important;
+    background-color: var(--main) !important;
+  }
+
+  .name {
+    color: var(--main) !important;
+  }
+
+  .divider {
+    background-color: var(--main) !important;
+  }
+}

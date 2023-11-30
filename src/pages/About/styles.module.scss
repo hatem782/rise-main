@@ -1,0 +1,13 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+}
+
+.content {
+  margin: 100px 0px 0px 0px;
+
+  @include lt-xxl {
+    margin: 75px 0px 0px 0px;
+  }
+}

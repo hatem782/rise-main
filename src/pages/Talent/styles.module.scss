@@ -1,0 +1,450 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+  background-color: #1b1c1e;
+  color: white;
+}
+
+.section1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+
+  @include lt-xxl {
+    margin-top: 85px;
+  }
+
+  @include lt-llg {
+    margin-top: 79px;
+  }
+
+  .Left {
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+    .container {
+      padding: 0px 50px 0px 180px;
+      transform: translateY(-40%);
+
+      @include lt-xxl {
+        padding: 0px 50px 0px 150px;
+        transform: translateY(-30%);
+      }
+
+      @include lt-llg {
+        transform: translateY(-25%);
+        padding: 0px 50px 0px 120px;
+      }
+
+      h1 {
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 68px;
+        line-height: 110%;
+
+        @include lt-xxl {
+          font-size: 56px;
+        }
+
+        @include lt-llg {
+          font-size: 50px;
+        }
+      }
+
+      p {
+        margin: 30px 0px 0px 0px;
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 120%;
+        text-align: left;
+
+        @include lt-xxl {
+          margin: 40px 0px 0px 0px;
+          font-size: 20px;
+        }
+
+        @include lt-llg {
+          margin: 30px 0px 0px 0px;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+
+  .Right {
+    width: 50%;
+
+    img {
+      transform: translateY(-10px);
+      width: 100%;
+    }
+  }
+}
+
+.section2 {
+  width: 100%;
+  height: 500px;
+
+  position: relative;
+
+  .c0 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 400px;
+
+    @include lt-xxl {
+      height: 300px;
+    }
+
+    @include lt-llg {
+      height: 250px;
+    }
+  }
+
+  .c1 {
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    height: 150px;
+
+    @include lt-xxl {
+      height: 120px;
+    }
+  }
+
+  .left {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    img {
+      height: 520px;
+      transform: translateY(-40%) translateX(10px);
+      border-radius: 20px;
+
+      @include lt-xxl {
+        transform: translateY(-20%);
+        height: 400px;
+      }
+
+      @include lt-llg {
+        transform: translateY(-20%);
+        height: 350px;
+      }
+    }
+  }
+}
+
+.section3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -180px;
+
+  .Left {
+    width: 47%;
+    height: 100%;
+    position: relative;
+
+    .container {
+      padding: 0px 50px 0px 180px;
+      height: 100%;
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      @include lt-llg {
+        padding: 0px 0px 0px 100px;
+      }
+
+      h1 {
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 110%;
+
+        @include lt-xxl {
+          font-size: 29px;
+        }
+
+        @include lt-llg {
+          font-size: 27px;
+        }
+      }
+
+      p {
+        margin: 20px 0px 0px 0px;
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 140%;
+        text-align: left;
+
+        @include lt-xxl {
+          margin: 20px 0px 0px 0px;
+          font-size: 19px;
+        }
+
+        @include lt-xxl {
+          font-size: 16px;
+        }
+      }
+
+      .c2 {
+        display: block;
+        margin: 40px auto;
+        height: 130px;
+
+        @include lt-xxl {
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  .Right {
+    width: 53%;
+
+    img {
+      width: 90%;
+    }
+  }
+}
+
+.section4 {
+  width: 100%;
+  height: calc(70vh);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -100px;
+  position: relative;
+
+  .c4 {
+    position: absolute;
+    right: 0px;
+    bottom: -50px;
+
+    @include lt-llg {
+      height: 230px;
+    }
+  }
+
+  .Left {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    transform: translateY(-5%);
+
+    .container {
+      padding: 0px 100px 0px 70px;
+      height: 100%;
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      @include lt-xxl {
+        padding: 0px 100px 0px 50px;
+      }
+
+      @include lt-llg {
+        padding: 0px 100px 0px 0px;
+      }
+
+      h1 {
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 110%;
+
+        @include lt-xxl {
+          font-size: 33px;
+        }
+
+        @include lt-llg {
+          font-size: 28px;
+        }
+      }
+
+      p {
+        margin: 20px 0px 0px 0px;
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 23px;
+        line-height: 140%;
+        text-align: left;
+
+        @include lt-xxl {
+          margin: 20px 0px 0px 0px;
+          font-size: 19px;
+        }
+
+        @include lt-llg {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .Right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 80%;
+    }
+  }
+}
+
+.section5 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 0px 100px 0px;
+
+  .Left {
+    width: 45%;
+    height: 100%;
+    position: relative;
+
+    .container {
+      padding: 0px 50px 0px 25%;
+      position: relative;
+
+      height: 100%;
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      transform: translateY(40%);
+
+      h1 {
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 110%;
+
+        @include lt-xxl {
+          font-size: 33px;
+        }
+
+        @include lt-llg {
+          font-size: 28px;
+        }
+      }
+
+      p {
+        margin: 20px 0px 0px 0px;
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 140%;
+        text-align: left;
+
+        @include lt-xxl {
+          margin: 20px 0px 0px 0px;
+          font-size: 19px;
+        }
+
+        @include lt-llg {
+          font-size: 16px;
+        }
+      }
+
+      .c2 {
+        display: block;
+        height: 130px;
+        position: absolute;
+
+        top: -100%;
+        left: 50px;
+
+        @include lt-xxl {
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  .Right {
+    width: 55%;
+
+    img {
+      width: 80%;
+    }
+  }
+}
+
+.section6 {
+  text-align: center;
+  padding: 80px 0px;
+  background-color: white;
+
+  h2.title {
+    font-family: "Futura";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 43px;
+    text-align: center;
+    color: #000;
+
+    @include lt-xxl {
+      font-size: 33px;
+    }
+  }
+
+  p.description {
+    font-family: "Futura";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    color: #000000;
+    margin: 10px auto 0px auto;
+
+    @include lt-xxl {
+      margin: 20px 0px 0px 0px;
+      font-size: 19px;
+    }
+  }
+
+  .btn {
+    margin: 50px auto 0px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+
+    @include lt-xxl {
+      margin: 25px auto 0px auto;
+    }
+  }
+}

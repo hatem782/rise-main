@@ -1,0 +1,11 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.main {
+  margin-top: 130px;
+  width: 100%;
+  position: relative;
+
+  @include lt-xxl {
+    margin-top: 80px;
+  }
+}

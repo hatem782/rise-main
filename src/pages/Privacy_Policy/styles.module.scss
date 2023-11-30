@@ -1,0 +1,159 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+}
+
+.content {
+  margin: 100px 0px 0px 0px;
+  position: relative;
+
+  @include lt-xxl {
+    margin: 85px 0px 0px 0px;
+  }
+
+  @include lt-llg {
+    margin: 70px 0px 0px 0px;
+  }
+}
+
+.c1 {
+  width: 100px;
+  position: absolute;
+  left: 30px;
+  top: 60px;
+
+  @include lt-xxl {
+    width: 80px;
+    top: 70px;
+  }
+
+  @include lt-llg {
+    width: 70px;
+    top: 70px;
+  }
+}
+
+.c3 {
+  width: 100px;
+  position: absolute;
+  left: 30px;
+  bottom: 70px;
+
+  @include lt-xxl {
+    width: 90px;
+    bottom: 100px;
+  }
+
+  @include lt-llg {
+    width: 80px;
+    bottom: 90px;
+  }
+}
+
+.c2 {
+  height: 600px;
+  position: absolute;
+  right: 0px;
+  top: 30%;
+
+  @include lt-xxl {
+    height: 500px;
+  }
+
+  @include lt-llg {
+    height: 400px;
+  }
+}
+
+.info-part {
+  width: 75%;
+  padding: 80px 0px 200px 160px;
+
+  @include lt-xxl {
+    width: 75%;
+  }
+
+  @include lt-llg {
+    width: 75%;
+    padding: 80px 0px 200px 120px;
+  }
+
+  h2 {
+    color: #000;
+    font-family: Futura;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+
+    margin: 0px 0px 40px 0px;
+
+    @include lt-xxl {
+      font-size: 34px;
+      margin: 0px 0px 30px 0px;
+    }
+
+    @include lt-llg {
+      font-size: 26px;
+      margin: 0px 0px 20px 0px;
+    }
+  }
+
+  h3 {
+    color: #000;
+    font-family: Futura;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 16.8px */
+    margin: 30px 0px 30px 0px;
+
+    @include lt-xxl {
+      font-size: 23px;
+      margin: 25px 0px 25px 0px;
+    }
+
+    @include lt-llg {
+      font-size: 21px;
+      margin: 20px 0px 20px 0px;
+    }
+  }
+
+  h4 {
+    color: #000;
+    font-family: Futura;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 16.8px */
+
+    @include lt-xxl {
+      font-size: 17px;
+    }
+
+    @include lt-llg {
+      font-size: 15px;
+    }
+  }
+
+  p {
+    color: #000;
+    font-family: Nunito;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+    margin: 0px 0px 20px 0px;
+
+    @include lt-xxl {
+      font-size: 16px;
+    }
+
+    @include lt-llg {
+      font-size: 15px;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+}

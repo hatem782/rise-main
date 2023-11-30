@@ -1,0 +1,23 @@
+.main-container{
+    height: 90vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .main-content{
+
+        .main-load{
+            text-align: center;
+            img{
+                width: 120px;
+                height: 120px;
+            }
+        }
+        p{
+            font-size: 24px;
+            font-family: "Futura PT";
+            font-weight: 500;
+            color: black;
+        }
+    }
+}

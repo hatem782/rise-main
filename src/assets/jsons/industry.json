@@ -1,0 +1,71 @@
+[
+  { "name": "Aerospace and Aviation", "value": "Aerospace and Aviation" },
+  { "name": "Agriculture and Farming", "value": "Agriculture and Farming" },
+  {
+    "name": "Art, Design, and Creative Services",
+    "value": "Art, Design, and Creative Services"
+  },
+  { "name": "Automotive Services", "value": "Automotive Services" },
+  {
+    "name": "Biotechnology and Pharmaceuticals",
+    "value": "Biotechnology and Pharmaceuticals"
+  },
+  {
+    "name": "Construction and Building Services",
+    "value": "Construction and Building Services"
+  },
+  { "name": "Consulting Services", "value": "Consulting Services" },
+  { "name": "Education and Training", "value": "Education and Training" },
+  { "name": "Energy and Utilities", "value": "Energy and Utilities" },
+  {
+    "name": "Engineering and Architecture",
+    "value": "Engineering and Architecture"
+  },
+  { "name": "Environmental Services", "value": "Environmental Services" },
+  { "name": "Finance and Banking", "value": "Finance and Banking" },
+  {
+    "name": "Food and Beverage Services",
+    "value": "Food and Beverage Services"
+  },
+  {
+    "name": "Healthcare and Medical Services",
+    "value": "Healthcare and Medical Services"
+  },
+  { "name": "Hospitality and Tourism", "value": "Hospitality and Tourism" },
+  { "name": "Human Resources ", "value": "Human Resources " },
+  {
+    "name": "IT / Software Development ",
+    "value": "IT / Software Development "
+  },
+  { "name": "Insurance Services", "value": "Insurance Services" },
+  { "name": "Legal Services", "value": "Legal Services" },
+  {
+    "name": "Manufacturing and Production",
+    "value": "Manufacturing and Production"
+  },
+  { "name": "Media and Entertainment", "value": "Media and Entertainment" },
+  { "name": "Non-Profit / Charity", "value": "Non-Profit / Charity" },
+  {
+    "name": "Public Sector / Government",
+    "value": "Public Sector / Government"
+  },
+  {
+    "name": "Real Estate and Property Management",
+    "value": "Real Estate and Property Management"
+  },
+  {
+    "name": "Retail and Consumer Goods",
+    "value": "Retail and Consumer Goods"
+  },
+  { "name": "Science and Research", "value": "Science and Research" },
+  {
+    "name": "Security and Protective Services",
+    "value": "Security and Protective Services"
+  },
+  { "name": "Sports and Recreation", "value": "Sports and Recreation" },
+  { "name": "Telecommunications ", "value": "Telecommunications " },
+  {
+    "name": "Transportation and Logistics",
+    "value": "Transportation and Logistics"
+  }
+]

@@ -1,0 +1,174 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+}
+
+.content {
+  margin-top: 100px;
+
+  padding: 60px 160px;
+
+  @include lt-xxl {
+    margin-top: 85px;
+  }
+
+  @include lt-llg {
+    margin-top: 70px;
+  }
+}
+
+.page_title {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: 20px;
+
+  img {
+    height: 60px;
+    margin: 0px 30px 0px 0px;
+
+    @include lt-xxl {
+      height: 45px;
+      margin: 0px 15px 0px 0px;
+    }
+
+    @include lt-llg {
+      height: 40px;
+      margin: 0px 10px 0px 0px;
+    }
+  }
+
+  h1 {
+    color: #000;
+    font-family: Futura;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @include lt-xxl {
+      font-size: 43px;
+    }
+
+    @include lt-llg {
+      font-size: 36px;
+    }
+  }
+}
+
+.form {
+  width: 60%;
+  margin: 60px 0px 0px 0px;
+
+  @include lt-xxl {
+    width: 70%;
+    margin: 40px 0px 0px 0px;
+  }
+
+  @include lt-llg {
+    width: 75%;
+    margin: 30px 0px 0px 0px;
+  }
+}
+
+.input,
+.select {
+  margin: 10px 0px;
+  
+  input,
+  textarea,
+  select {
+    color: rgba(0, 4, 17) !important;
+  }
+}
+
+.desc {
+  width: 100%;
+  .choose {
+    padding: 0px 0px 10px 0px;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      color: #000411;
+      font-family: Futura;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.36px;
+
+      @include lt-xxl {
+        font-size: 20px;
+      }
+
+      @include lt-llg {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.btns {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include lt-xxl {
+    margin-top: 30px;
+  }
+
+  @include lt-llg {
+    margin-top: 20px;
+  }
+
+  .btn {
+    width: 300px;
+
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    border: solid 1px var(--main);
+
+    @include lt-xxl {
+      width: 250px;
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    @include lt-llg {
+      width: 200px;
+      font-size: 15px;
+      padding: 8px;
+    }
+  }
+}
+
+.p_popup {
+  padding: 40px 0px;
+  margin-top: 0px !important;
+  color: #f58244 !important ;
+  text-align: center !important;
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+
+  @include lt-xxl {
+    padding: 30px 0px;
+    font-size: 28px !important;
+  }
+
+  @include lt-llg {
+    padding: 25px 0px;
+    font-size: 24px !important;
+  }
+}

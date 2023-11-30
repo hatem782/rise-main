@@ -1,0 +1,68 @@
+@use "../../assets/scss/media-queries.scss" as *;
+.main {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  padding-top: 18px;
+
+  height: 100%;
+
+  @include lt-llg {
+    padding-top: 22px;
+  }
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+
+  .check {
+    height: 24px;
+    width: 24px;
+    margin: 0px 10px 0px 0px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1.5px solid rgba(0, 0, 0, 0.815);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include lt-xxl {
+      height: 20px;
+      width: 20px;
+      margin: 0px 5px 0px 0px;
+    }
+
+    @include lt-llg {
+      height: 18px;
+      width: 18px;
+      margin: 0px 4px 0px 0px;
+    }
+
+    .icon {
+      width: 90%;
+    }
+  }
+
+  span {
+    color: #000;
+    font-size: 19px;
+    font-family: "Futura";
+    font-weight: 600;
+    line-height: 1;
+
+    @include lt-xxl {
+      font-size: 16px;
+    }
+  }
+}
+
+.error-msg {
+  color: #d51a52;
+  font-family: Futura;
+}

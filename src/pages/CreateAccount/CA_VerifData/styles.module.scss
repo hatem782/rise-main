@@ -1,0 +1,433 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  width: 75%;
+  padding: 100px 0px 100px 100px;
+  margin: 0px 0px 0px 200px;
+
+  @include lt-xxl {
+    padding: 85px 0px 80px 100px;
+  }
+
+  @include lt-llg {
+    padding: 70px 0px 70px 100px;
+  }
+}
+
+.head {
+  // background-color: var(--main);
+  padding: 60px 50px;
+
+  @include lt-xxl {
+    padding: 50px 40px;
+  }
+
+  h1 {
+    color: #000;
+    font-size: 70px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 1;
+    text-align: center;
+
+    @include lt-xxl {
+      font-size: 60px;
+    }
+
+    @include lt-llg {
+      font-size: 55px;
+    }
+  }
+  h2 {
+    color: #000;
+    font-size: 35px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 1;
+    text-align: center;
+
+    @include lt-xxl {
+      font-size: 28px;
+    }
+
+    @include lt-llg {
+      font-size: 26px;
+    }
+  }
+
+  .infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+
+    @include lt-xxl {
+      margin: 20px 0px 0px 0px;
+    }
+
+    @include lt-llg {
+      margin: 18px 0px 0px 0px;
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 0px 20px 0px 0px;
+
+    @include lt-xxl {
+      margin: 0px 40px 0px 0px;
+    }
+
+    @include lt-llg {
+      margin: 0px 30px 0px 0px;
+    }
+
+    .icon {
+      margin: 0px 10px 0px 0px;
+      height: 20px;
+
+      @include lt-xxl {
+        height: 16px;
+      }
+
+      @include lt-llg {
+        height: 15px;
+      }
+    }
+
+    span {
+      color: var(--main);
+      font-size: 20px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+
+      @include lt-xxl {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.c1 {
+  position: absolute;
+  right: 0px;
+  top: 32%;
+  height: 300px;
+
+  @include lt-xxl {
+    top: 30%;
+    height: 250px;
+  }
+
+  @include lt-llg {
+    top: 30%;
+    height: 200px;
+  }
+}
+
+.description {
+  color: black;
+  font-size: 20px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0px;
+
+  * {
+    color: black !important;
+    font-size: 20px !important;
+    background-color: transparent !important;
+
+    @include lt-xxl {
+      font-size: 18px;
+      margin-top: 30px;
+    }
+
+    @include lt-llg {
+      font-size: 18px !important;
+      margin-top: 0px !important;
+    }
+  }
+}
+
+.underlined_title {
+  width: 100%;
+  // border-bottom: solid 2px black;
+  margin-top: 50px;
+  padding-bottom: 3px;
+
+  color: #000;
+  font-size: 24px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  @include lt-xxl {
+    margin-top: 30px;
+    font-size: 22px;
+  }
+
+  @include lt-llg {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+
+.Skills_and_proficencies {
+  width: 100%;
+
+  .skills {
+    width: 75%;
+    margin: 10px 0px 0px 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .skill {
+      display: block;
+      width: 30%;
+      margin: 5px 0px 0px 0px;
+      color: black;
+      font-size: 20px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      @include lt-xxl {
+        font-size: 18px;
+      }
+
+      @include lt-llg {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.Work_History {
+  width: 100%;
+
+  .works {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+
+    @include lt-xxl {
+      margin: 15px 0px 0px 0px;
+    }
+
+    @include lt-llg {
+      margin: 14px 0px 0px 0px;
+    }
+
+    .work {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 0px 0px 50px 0px;
+
+      @include lt-xxl {
+        margin: 0px 0px 40px 0px;
+      }
+
+      @include lt-llg {
+        margin: 0px 0px 30px 0px;
+      }
+
+      .date {
+        width: fit-content;
+        white-space: nowrap;
+        margin: 0px 40px 0px 0px;
+        width: 350px;
+
+        color: black;
+        font-size: 20px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+
+        @include lt-xxl {
+          font-size: 18px;
+          width: 300px;
+        }
+
+        @include lt-llg {
+          font-size: 18px;
+          width: 220px;
+        }
+      }
+
+      .infos {
+        flex-grow: 1;
+        .title {
+          color: #000;
+          font-size: 20px;
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          display: block;
+          margin: 0px 0px 10px 0px;
+
+          @include lt-xxl {
+            font-size: 18px;
+          }
+
+          @include lt-llg {
+            font-size: 17px;
+          }
+        }
+
+        .title-2 {
+          color: #000;
+          font-size: 20px;
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          display: block;
+          margin: 0px 0px 0px 0px;
+
+          @include lt-xxl {
+            font-size: 18px;
+          }
+          @include lt-llg {
+            font-size: 17px;
+          }
+        }
+
+        .Role_and_Respo {
+          color: #000;
+          font-size: 18px;
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          display: block;
+          margin: 0px 0px 10px 0px;
+
+          @include lt-xxl {
+            font-size: 16px;
+          }
+
+          @include lt-llg {
+            font-size: 15px;
+          }
+
+          * {
+            font-size: 20px;
+
+            @include lt-llg {
+              font-size: 17px;
+            }
+          }
+        }
+
+        .positions {
+          color: #000;
+          font-size: 16px;
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          display: block;
+          margin: 10px 0px;
+
+          @include lt-xxl {
+            font-size: 14px;
+          }
+
+          @include lt-llg {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.others {
+  .works {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .work {
+    width: 50% !important;
+  }
+  .date {
+    width: 150px !important;
+  }
+
+  .others_html {
+    color: #000;
+    font-size: 18px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    margin: 0px 0px 10px 0px;
+
+    @include lt-llg {
+      font-size: 17px;
+    }
+  }
+}
+
+.btn-container {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include lt-xxl {
+    margin-top: 45px;
+  }
+
+  @include lt-llg {
+    margin-top: 30px;
+  }
+
+  .btn {
+    padding: 20px 40px !important;
+
+    @include lt-xxl {
+      padding: 12px 30px !important;
+    }
+  }
+
+  .btn-black {
+    background-color: black;
+    border: solid 1px black;
+  }
+
+  .btn-orange {
+    padding: 20px 70px !important;
+
+    @include lt-xxl {
+      padding: 12px 40px !important;
+    }
+  }
+}

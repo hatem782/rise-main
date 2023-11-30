@@ -1,0 +1,152 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  background-color: #121212;
+  width: 100%;
+}
+
+.TopSide {
+  width: 100%;
+  padding: 65px 150px 200px 150px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include lt-xxl {
+    padding: 50px 100px 100px 100px;
+  }
+
+  @include lt-xxl {
+    padding: 40px 80px 80px 80px;
+  }
+}
+
+.part1 {
+  width: 25%;
+
+  .logo {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .rxs {
+    width: 65%;
+    margin: 10px auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .rx {
+      width: 16%;
+      img {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.part2 {
+  width: 75%;
+  padding: 0px 0px 0px 50px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  @include lt-llg {
+    padding: 0px 0px 0px 40px;
+  }
+
+  .group {
+    width: 23%;
+
+    h2 {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 32px;
+      color: #ffffff;
+      margin: 0px 0px 20px 0px;
+
+      @include lt-xxl {
+        font-size: 22px;
+        font-weight: 800;
+      }
+
+      @include lt-llg {
+        font-size: 18px;
+        margin: 0px 0px 10px 0px;
+      }
+
+      * {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+
+    span {
+      display: block;
+      margin: 6px 0px;
+      cursor: pointer;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 30px;
+
+      @include lt-xxl {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 3px 0px;
+      }
+
+      @include lt-llg {
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0px 0px;
+        line-height: 25px;
+      }
+
+      * {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.part3 {
+  width: 100%;
+  border-top: 1px solid #ffffff;
+  padding: 30px 80px;
+
+  @include lt-xxl {
+    padding: 20px 80px;
+  }
+
+  @include lt-llg {
+    padding: 5px 60px;
+  }
+  h2 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    text-align: right;
+
+    @include lt-xxl {
+      font-size: 16px;
+    }
+
+    @include lt-llg {
+      font-size: 12px;
+    }
+  }
+}

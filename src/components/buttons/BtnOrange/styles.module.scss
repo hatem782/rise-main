@@ -1,0 +1,94 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  background: var(--main);
+  box-shadow: 0px 4px 4px rgba(245, 130, 68, 0.12);
+  border-radius: 7px;
+  width: fit-content;
+  text-align: center;
+
+  font-family: "Futura";
+  font-style: normal;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  border: solid 2px var(--main);
+
+  * {
+    text-decoration: none;
+  }
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.large {
+  padding: 20px 70px;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 120%;
+
+  @include lt-xxl {
+    font-size: 17px;
+    padding: 16px 50px;
+  }
+
+  @include lt-llg {
+    font-size: 15px;
+    padding: 15px 45px;
+  }
+
+  @include lt-md {
+    font-family: Futura PT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 14px 30px;
+  }
+}
+
+.medium {
+  padding: 15px 50px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  min-width: 220px;
+
+  @include lt-xxl {
+    font-size: 14px;
+    padding: 14px 30px;
+  }
+}
+.medium-mb {
+  padding: 15px 50px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  padding: 10px 20px;
+}
+.medium-mb-100 {
+  padding: 15px 50px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  padding: 10px 20px;
+}
+.outlined {
+  border: solid 2px var(--main);
+  background-color: transparent;
+  color: var(--main);
+}
+
+.disabled {
+  background-color: grey;
+  border: solid 2px grey;
+  cursor: no-drop;
+}

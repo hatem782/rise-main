@@ -1,0 +1,126 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  background-color: #121212;
+  width: 100%;
+}
+
+.TopSide {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 2.5rem;
+
+}
+
+.part1 {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding-bottom: 2rem;
+  
+  .logo {
+    width: 122px;
+    height: 79px;
+    cursor: pointer;
+  }
+
+  .rxs {
+    width: 50%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    .rx {
+      width: 24px;
+      img {
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.part2 {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  .w-50-footer{
+    .group {
+      width: 100%;
+      h2 {
+        color: #FFF;
+        font-family: Futura PT;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; 
+        margin: 0px 0px 10px 0px;
+  
+        * {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+      .h2-nopadd {
+        color: #FFF;
+        font-family: Futura PT;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; 
+        margin: 0px 0px 0 0px!important;
+  
+        * {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+  
+      span {
+        display: block;
+        cursor: pointer;
+        font-family: Nunito;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+  
+        text-decoration: none;
+        color: #ffffff;
+        * {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.part3 {
+  width: 100%;
+  padding: 0 15px ;
+
+  h2 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 500;
+    border-top: 1px solid #ffffff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: center;
+
+  }
+}

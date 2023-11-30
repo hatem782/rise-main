@@ -1,0 +1,76 @@
+.main {
+  width: 100%;
+  cursor: pointer;
+  img {
+    width: 100%;
+    aspect-ratio: 46/24;
+    object-fit: cover;
+
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  h3 {
+    width: 100%;
+
+    color: #fff;
+    font-family: Futura;
+    font-size: 22px;
+    // font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 5px 0px;
+  }
+
+  p {
+    color: #fff;
+    font-family: Futura;
+    // font-size: 16px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 3px;
+  }
+
+  span {
+    width: 100%;
+
+    color: #fff;
+    font-family: Futura;
+    // font-size: 14px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+}
+
+.white {
+  h3 {
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  span {
+    color: #fff;
+  }
+}
+
+.black {
+  h3 {
+    color: var(--main);
+  }
+
+  p {
+    color: #000;
+  }
+
+  span {
+    color: #000;
+  }
+}

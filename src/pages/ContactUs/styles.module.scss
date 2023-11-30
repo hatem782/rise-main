@@ -1,0 +1,135 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+}
+
+.content {
+  margin: 100px 0px 50px 0px;
+  padding: 50px 160px;
+  position: relative;
+
+  @include lt-xxl {
+    margin: 85px 0px 0px 0px;
+  }
+
+  @include lt-llg {
+    margin: 70px 0px 0px 0px;
+    padding: 50px 100px;
+  }
+}
+
+.c1 {
+  position: absolute;
+  bottom: 70px;
+  left: 0px;
+  height: 200px;
+
+  @include lt-llg {
+    bottom: 100px;
+    height: 170px;
+  }
+}
+
+.c2 {
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  height: 200px;
+
+  @include lt-llg {
+    bottom: 70px;
+    height: 170px;
+  }
+}
+
+.head {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: #020202;
+    font-family: Montserrat;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px 30px 0px 0px;
+
+    @include lt-llg {
+      font-size: 65px;
+    }
+  }
+
+  img {
+    height: 150px;
+
+    @include lt-llg {
+      height: 120px;
+    }
+  }
+}
+
+.desc {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font-family: Futura;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+
+  @include lt-llg {
+    font-size: 24px;
+  }
+
+  a {
+    margin: 10px 0px;
+    display: block;
+    color: var(--main);
+  }
+}
+
+.form {
+  width: 60%;
+  margin: 100px auto;
+
+  @include lt-llg {
+    width: 80%;
+  }
+
+  .input {
+    label {
+      margin-bottom: 20px;
+      display: block;
+
+      @include lt-llg {
+        margin-bottom: 12px;
+      }
+    }
+
+    div {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    input {
+      padding: 25px 30px;
+
+      @include lt-xxl {
+        padding: 18px 20px;
+      }
+
+      @include lt-llg {
+        padding: 16px 16px;
+      }
+    }
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

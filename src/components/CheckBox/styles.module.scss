@@ -1,0 +1,45 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+.check-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .check {
+    height: 24px;
+    width: 24px;
+    margin: 0px 10px 0px 0px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include lt-xxl {
+      height: 18px;
+      width: 18px;
+      margin: 0px 5px 0px 0px;
+    }
+
+    .icon {
+      width: 90%;
+    }
+  }
+
+  span {
+    color: #000;
+    font-size: 18px;
+    font-family: "Futura";
+    font-weight: 700;
+
+    @include lt-xxl {
+      font-size: 16px;
+    }
+  }
+}
+
+.message_error {
+  position: absolute;
+}

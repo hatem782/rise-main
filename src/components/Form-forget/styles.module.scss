@@ -1,0 +1,67 @@
+@use "../../assets/scss/media-queries.scss" as *;
+
+
+.form {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+ 
+
+  .w25 {
+    width: 24.8%;
+    padding: 0px 0px 40px 0px;
+
+    @include lt-xxl {
+      padding: 0px 0px 30px 0px;
+    }
+  }
+
+  .w03 {
+    width: 32.25%;
+    padding: 0px 0px 40px 0px;
+
+    @include lt-xxl {
+      padding: 0px 0px 30px 0px;
+    }
+  }
+
+  .w05 {
+    width: 49.5%;
+    padding: 0px 0px 40px 0px;
+
+    @include lt-xxl {
+      padding: 0px 0px 30px 0px;
+    }
+  }
+
+  .w1 {
+    width: 100%;
+    padding: 0px 0px 40px 0px;
+
+    @include lt-xxl {
+      padding: 0px 0px 30px 0px;
+    }
+  }
+
+  .title {
+    width: 100%;
+    font-family: "Futura";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 15px;
+    color: #000000;
+
+    margin: 0px 0px 10px 0px;
+
+    @include lt-xxl {
+      font-size: 17px;
+      margin: 0px 0px 8px 0px;
+    }
+  }
+}
+

@@ -1,0 +1,541 @@
+@use "../../../assets/scss/media-queries.scss" as *;
+
+.main {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+
+  @include lt-xxl {
+    margin-top: 85px;
+  }
+
+  @include lt-xxl {
+    margin-top: 79px;
+  }
+}
+
+.content {
+  padding: 10px 0px 100px 0px;
+
+  @include lt-xxl {
+    padding: 7px 0px 95px 0px;
+  }
+
+  @include lt-llg {
+    padding: 5px 0px 85px 0px;
+  }
+}
+
+.header {
+  position: relative;
+  .cover {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    box-shadow: 0px 4px 6px 0px rgba(65, 161, 160, 0.04);
+    border-radius: 21px 21px 0px 21px;
+
+    @include lt-xxl {
+      height: 350px;
+      border-radius: 15px 15px 0px 15px;
+    }
+
+    @include lt-llg {
+      height: 300px;
+      border-radius: 12px 12px 0px 12px;
+    }
+  }
+
+  .select-img {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 500px;
+    background: rgba(65, 161, 160, 0.54);
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include lt-xxl {
+      height: 50px;
+      width: 50px;
+
+      top: 30px;
+      right: 30px;
+    }
+
+    @include lt-llg {
+      height: 45px;
+      width: 45px;
+
+      top: 25px;
+      right: 25px;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .white-container {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+
+    border-radius: 0px 21px;
+    background: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(65, 161, 159, 0.3);
+
+    padding: 0px 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include lt-xxl {
+      bottom: -40px;
+      padding: 0px 140px;
+      border-radius: 0px 15px;
+    }
+
+    @include lt-llg {
+      bottom: -30px;
+      padding: 0px 120px;
+      border-radius: 0px 12px;
+      height: 70px;
+    }
+
+    @include lt-lg {
+      padding: 0px 60px;
+    }
+
+    .company-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5rem;
+    }
+
+    .logo-container {
+      width: 230px;
+      height: 230px;
+      aspect-ratio: 1/1;
+      background-color: white;
+
+      border: 1px solid rgba(0, 0, 0);
+      background: #fff;
+      box-shadow: 0px 4px 10px 0px rgba(65, 161, 160, 0.13),
+        0px 4px 15px 0px rgba(65, 161, 160, 0.13);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transform: translateY(20px);
+
+      @include lt-xxl {
+        width: 200px;
+        height: 200px;
+      }
+
+      @include lt-llg {
+        width: 180px;
+        height: 180px;
+      }
+
+      img {
+        width: 70%;
+      }
+    }
+
+    p {
+      color: #000;
+      font-size: 22px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      @include lt-xxl {
+        font-size: 21px;
+      }
+
+      @include lt-llg {
+        font-size: 19px;
+      }
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 400;
+      color: black;
+
+      border-width: 1px;
+      background-color: white;
+
+      @include lt-xxl {
+        padding: 9px 18px;
+        font-size: 17px;
+      }
+
+      @include lt-llg {
+        padding: 7px 14px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.body {
+  width: 100%;
+  padding: 150px 200px 0px 200px;
+
+  @include lt-xxl {
+    padding: 130px 140px 0px 140px;
+  }
+
+  @include lt-llg {
+    padding: 110px 120px 0px 120px;
+  }
+
+  @include lt-lg {
+    padding: 110px 60px 0px 60px;
+  }
+
+  .description-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 50px 0px;
+
+    @include lt-xxl {
+      margin: 30px 0px;
+    }
+
+    @include lt-llg {
+      margin: 20px 0px;
+    }
+  }
+
+  .description {
+    padding: 70px 30px 80px 30px;
+    flex-grow: 1;
+    width: 75%;
+    border-radius: 0px 21px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(65, 161, 160, 0.13);
+
+    position: relative;
+
+    @include lt-xxl {
+      padding: 50px 30px 30px 30px;
+      border-radius: 0px 21px;
+    }
+
+    @include lt-llg {
+      padding: 30px 25px 25px 25px;
+      border-radius: 0px 18px;
+    }
+    .img-tag {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      margin-bottom: 1.25rem;
+      .edit-icon {
+        width: 21px;
+        height: 20px;
+      }
+    }
+
+    .part-title {
+      color: #000;
+      font-size: 22px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      margin: 0px 10px 0px 0px;
+
+      @include lt-llg {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 18px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      text-align: left;
+
+      margin: 10px 0 20px 0px;
+
+      @include lt-llg {
+        font-size: 14px;
+      }
+    }
+
+    .stats {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .stat {
+        padding: 40px 0px 20px 0px;
+
+        @include lt-xxl {
+          padding: 20px 0px 15px 0px;
+        }
+
+        .number {
+          color: var(--main);
+          font-size: 26px;
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%;
+
+          display: block;
+          text-align: center;
+          margin: 0px 0px 5px 0px;
+
+          @include lt-xxl {
+            font-size: 24px;
+            margin: 0px 0px 4px 0px;
+          }
+
+          @include lt-llg {
+            font-size: 20px;
+          }
+        }
+
+        .title {
+          color: #000;
+          font-size: 20px;
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 120%;
+          text-decoration: none;
+
+          display: block;
+          text-align: center;
+
+          @include lt-xxl {
+            font-size: 16px;
+          }
+          @include lt-llg {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .part2-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    width: 25%;
+    min-width: 25%;
+    margin: 0px 0px 0px 100px;
+
+    @include lt-xxl {
+      width: 25%;
+      min-width: 25%;
+      margin: 0px 0px 0px 50px;
+    }
+
+    @include lt-llg {
+      width: 25%;
+      min-width: 25%;
+      margin: 0px 0px 0px 40px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      font-size: 20px;
+      font-weight: 500;
+
+      padding: 15px 60px;
+
+      @include lt-xxl {
+        font-size: 16px;
+        padding: 12px 0px;
+      }
+
+      @include lt-llg {
+        font-size: 14px;
+        padding: 10px 0px;
+      }
+
+      img {
+        height: 20px;
+        margin: 0px 10px 0px 0px;
+
+        @include lt-xxl {
+          height: 17px;
+          margin: 0px 8px 0px 0px;
+        }
+
+        @include lt-llg {
+          height: 16px;
+          margin: 0px 7px 0px 0px;
+        }
+      }
+    }
+
+    .head-office {
+      padding: 20px;
+      position: relative;
+      width: 100%;
+      margin: 50px 0px 0px 0px;
+
+      border-radius: 0px 21px;
+      border: 1px solid rgba(0, 0, 0, 0.09);
+      background: #fff;
+      box-shadow: 0px 4px 8px 0px rgba(65, 161, 160, 0.13);
+
+      @include lt-xxl {
+        margin: 40px 0px 0px 0px;
+        padding: 16px 18px;
+        border-radius: 0px 15px;
+      }
+
+      @include lt-llg {
+        margin: 30px 0px 0px 0px;
+        padding: 16px 16px;
+        border-radius: 0px 12px;
+      }
+
+      .edit-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        @include lt-xxl {
+          top: 15px;
+          right: 15px;
+        }
+
+        @include lt-llg {
+          top: 12px;
+          right: 12px;
+        }
+      }
+
+      h3 {
+        color: #000;
+        font-size: 20px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        padding-bottom: 5px;
+        @include lt-xxl {
+          font-size: 17px;
+        }
+
+        @include lt-llg {
+          font-size: 15px;
+        }
+      }
+
+      .location {
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+
+        img {
+          height: 15px;
+          margin: 0px 5px 0px 0px;
+
+          @include lt-xxl {
+            height: 14px;
+          }
+
+          @include lt-llg {
+            height: 12px;
+          }
+        }
+        span {
+          color: rgba(0, 0, 0, 0.4);
+          font-size: 18px;
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          @include lt-xxl {
+            font-size: 16px;
+          }
+
+          @include lt-llg {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .jobs {
+    width: 100%;
+
+    margin: 80px 0px 0px 0px;
+
+    @include lt-xxl {
+      margin: 80px 0px 0px 0px;
+    }
+
+    .title {
+      font-size: 28px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+
+      @include lt-xxl {
+        font-size: 24px;
+      }
+      @include lt-llg {
+        font-size: 21px;
+      }
+      span {
+        color: #f58244;
+      }
+    }
+
+    .jobs-items {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .item {
+        width: 49%;
+        margin: 20px 0px;
+
+        @include lt-xxl {
+        }
+      }
+    }
+  }
+}
