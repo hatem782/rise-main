@@ -1,0 +1,65 @@
+[X] Get All Companies
+[X] See One Company
+[X] Delete Company
+
+
+[ ] Get All Company Jobs
+[ ] Delete Job
+[ ] See Job Details
+[ ] Get All Jobs
+
+[X] Get All Talents
+[X] Delete Talent
+[X] See Details Talent
+
+[ ] Contact Us
+[ ] See if ther's more things
+
+
+
+[ ] DashHome Data
+    [ ] 
+    [ ] 
+    [ ] 
+    [ ] 
+    [ ] 
+    [ ] 
+    [ ] 
+
+
+
+######################################### Not Related Things #########################################
+[x] Crud Managers
+    [x] Add Manager for university
+    [x] Show Manager
+    [x] Delete That Manager
+    [x] Block That Manager
+    [?] Edit Manager
+
+[-] Crud Students
+    [x] Show One Student
+    [x] Show Students
+    [x] Delete That Students
+    [x] Block That Students
+    [x] Edit Student
+    [ ] show user files
+
+[x] Crud SousAdmins
+    [x] Show One SousAdmin
+    [x] Show SousAdmins
+    [x] Delete That SousAdmins
+    [x] Block That SousAdmins
+    [x] Edit SousAdmin
+
+[x] feedbacks (nom email + text => in card form)
+[x] Mailing Page (with multi select)
+[ ] conversation
+[ ] Approve 
+[ ] update manager
+
+[x] create feedback
+[x] get all feedbacks
+[x] delete feedback
+
+
+
